@@ -1,18 +1,18 @@
-import React,{Fragment, Component} from "react";
+import React,{Fragment,Component} from "react";
 import { withRouter  } from "react-router-dom";
  class One extends Component{
-     constructor(props){
-         super(props)
-         this.state={
-             name:"我是One组件"
-         }
-     }
+    constructor(props){
+        super(props);
+        this.state={
+            name:"我是One组件"
+        }
+    }
     render(){
-        return(
+        return (
             <Fragment>
-            <h1>{this.state.name}</h1>
-            <button onClick={this.handleToPath.bind(this)}>Oneto</button>
-        </Fragment>
+                <h1>{this.state.name}</h1>
+                <button onClick={this.handleToPath.bind(this)}>OneToPath</button>
+            </Fragment>
         )
     }
     handleToPath(){
